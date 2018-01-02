@@ -1,0 +1,13 @@
+# micromagic systems.
+# DXF to SCR generated script file.
+# Original Conversion Routine by: Hank Wallace.
+Grid mil 1 off;
+Set Wire_Bend 2;
+Layer Dimension;
+Change Font Vector;
+Wire 1 (1575 1378) (0 1378);
+Wire 1 (0 1378) (0 0);
+Wire 1 (0 0) (1575 0);
+Wire 1 (1575 0) (1575 1378);
+Window Fit;
+# lines=4, arcs=0, circles=0
