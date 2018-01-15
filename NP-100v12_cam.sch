@@ -25360,8 +25360,8 @@ Source: http://www.lumberg.de/Produkte/PDFs/WBTOR1.pdf</description>
 <part name="GND16" library="SparkFun" deviceset="GND" device=""/>
 <part name="TP3" library="testpad" deviceset="TP" device="PAD1-17"/>
 <part name="TP4" library="testpad" deviceset="TP" device="PAD1-17"/>
-<part name="TP1" library="testpad" deviceset="TP" device="PAD1-17"/>
-<part name="TP2" library="testpad" deviceset="TP" device="PAD1-17"/>
+<part name="TP_AMPPWR" library="testpad" deviceset="TP" device="PAD1-17"/>
+<part name="TP_GND" library="testpad" deviceset="TP" device="PAD1-17"/>
 <part name="C7" library="adafruit" deviceset="CPOL-US" device="E10-25" value="2200uF"/>
 <part name="C8" library="adafruit" deviceset="CPOL-US" device="E10-25" value="2200uF"/>
 <part name="IC3" library="v-reg" deviceset="LM317TS" device="" value="LM317T"/>
@@ -25460,7 +25460,7 @@ Source: http://www.lumberg.de/Produkte/PDFs/WBTOR1.pdf</description>
 <part name="GND34" library="SparkFun" deviceset="GND" device=""/>
 <part name="GND31" library="SparkFun" deviceset="GND" device=""/>
 <part name="GND32" library="SparkFun" deviceset="GND" device=""/>
-<part name="TP5" library="testpad" deviceset="TP" device="PAD1-17"/>
+<part name="TP_HTR" library="testpad" deviceset="TP" device="PAD1-17"/>
 <part name="IC4" library="linear" deviceset="78*" device="TV" technology="05"/>
 <part name="R22" library="adafruit" deviceset="R-US_" device="0207/10" value="1M"/>
 <part name="R23" library="adafruit" deviceset="R-US_" device="0207/10" value="1M"/>
@@ -25542,8 +25542,8 @@ Fuse rm:5
 <instance part="GND16" gate="1" x="185.42" y="-30.48"/>
 <instance part="TP3" gate="G$1" x="7.62" y="60.96" rot="R270"/>
 <instance part="TP4" gate="G$1" x="177.8" y="60.96" rot="R270"/>
-<instance part="TP1" gate="G$1" x="60.96" y="-71.12"/>
-<instance part="TP2" gate="G$1" x="60.96" y="-86.36" rot="R180"/>
+<instance part="TP_AMPPWR" gate="G$1" x="60.96" y="-71.12"/>
+<instance part="TP_GND" gate="G$1" x="60.96" y="-86.36" rot="R180"/>
 <instance part="C7" gate="G$1" x="-25.4" y="-83.82"/>
 <instance part="C8" gate="G$1" x="-17.78" y="-83.82"/>
 <instance part="IC3" gate="1" x="5.08" y="-76.2"/>
@@ -25682,7 +25682,7 @@ Fuse rm:5
 <instance part="GND34" gate="1" x="-12.7" y="-116.84"/>
 <instance part="GND31" gate="1" x="73.66" y="7.62"/>
 <instance part="GND32" gate="1" x="0" y="-208.28"/>
-<instance part="TP5" gate="G$1" x="152.4" y="-71.12"/>
+<instance part="TP_HTR" gate="G$1" x="152.4" y="-71.12"/>
 <instance part="IC4" gate="A1" x="129.54" y="-157.48"/>
 <instance part="R22" gate="G$1" x="-40.64" y="-35.56" rot="R180"/>
 <instance part="R23" gate="G$1" x="-40.64" y="-17.78" rot="R180"/>
@@ -25826,7 +25826,7 @@ Fuse rm:5
 <pinref part="GND20" gate="1" pin="GND"/>
 <wire x1="60.96" y1="-81.28" x2="55.88" y2="-81.28" width="0.1524" layer="91"/>
 <wire x1="55.88" y1="-81.28" x2="55.88" y2="-93.98" width="0.1524" layer="91"/>
-<pinref part="TP2" gate="G$1" pin="TP"/>
+<pinref part="TP_GND" gate="G$1" pin="TP"/>
 <wire x1="60.96" y1="-83.82" x2="60.96" y2="-81.28" width="0.1524" layer="91"/>
 <pinref part="PSU_AMP_OUT" gate="-1" pin="S"/>
 <wire x1="60.96" y1="-81.28" x2="63.5" y2="-81.28" width="0.1524" layer="91"/>
@@ -26221,7 +26221,7 @@ Fuse rm:5
 <segment>
 <pinref part="F1" gate="1" pin="2"/>
 <wire x1="50.8" y1="-76.2" x2="60.96" y2="-76.2" width="0.1524" layer="91"/>
-<pinref part="TP1" gate="G$1" pin="TP"/>
+<pinref part="TP_AMPPWR" gate="G$1" pin="TP"/>
 <wire x1="60.96" y1="-73.66" x2="60.96" y2="-76.2" width="0.1524" layer="91"/>
 <pinref part="PSU_AMP_OUT" gate="-2" pin="S"/>
 <wire x1="60.96" y1="-76.2" x2="63.5" y2="-76.2" width="0.1524" layer="91"/>
@@ -26579,7 +26579,7 @@ Fuse rm:5
 <junction x="142.24" y="-76.2"/>
 <pinref part="PSU_HEATER_OUT" gate="-2" pin="S"/>
 <wire x1="142.24" y1="-76.2" x2="152.4" y2="-76.2" width="0.1524" layer="91"/>
-<pinref part="TP5" gate="G$1" pin="TP"/>
+<pinref part="TP_HTR" gate="G$1" pin="TP"/>
 <wire x1="152.4" y1="-76.2" x2="154.94" y2="-76.2" width="0.1524" layer="91"/>
 <wire x1="152.4" y1="-73.66" x2="152.4" y2="-76.2" width="0.1524" layer="91"/>
 <junction x="152.4" y="-76.2"/>
